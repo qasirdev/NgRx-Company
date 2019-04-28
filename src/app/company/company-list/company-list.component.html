@@ -1,0 +1,9 @@
+<h2>Companies</h2>
+<button class="btn btn-success float-right" 
+  [routerLink]="['/company/0', 'edit']"
+  routerLinkActive="router-link-active" >Add</button>
+
+<app-company-table 
+[companies] = "companies$ | async"
+(deleteCompany) = "deleteCompany($event)"
+></app-company-table>

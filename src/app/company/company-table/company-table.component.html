@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col" sortable="name" (sort)="onSort($event)">Name</th>
+    <th scope="col" sortable="email" (sort)="onSort($event)">Email</th>
+    <th scope="col" sortable="phone" (sort)="onSort($event)">Phone</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let company of companies">
+    <th scope="row">{{ company.id }}</th>
+    <td>{{company.name}}</td>
+    <td>{{company.email}}</td>
+    <td>{{company.phone}}</td>
+    <td>
+      <button class="btn btn-default" [routerLink]="['/company/',company.id, 'edit']" >Edit</button>      
+      <button class="btn btn-default" (click)="deleteCompany.next(company.id)">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
