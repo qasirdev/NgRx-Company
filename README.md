@@ -1,4 +1,4 @@
-# NgrxPbp - Play by Play with Angular and ngrx with Angular 7
+# NgrxPbp - Angular 7 and ngrx Company Example
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
